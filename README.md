@@ -42,9 +42,16 @@ WASM binary generated: **34 bytes.**
 
 `[magic:4][version:4][type_sec:7][func_sec:5][export_sec:6][code_sec:8]`
 
-So, I first tried to strip the custom sections but the smart contract was rejected. Then, I found this in the reference Soroban documentation:
+So, I first tried to strip the custom sections but the smart contract was rejected with the following error:
 
-[https://soroban.stellar.org/docs/reference](https://soroban.stellar.org/docs/reference/sdks/build-your-own-sdk#contract-meta-generation)
+```
+0: [Diagnostic Event] topics:[error, Error(WasmVm, InvalidInput)], data:"contract missing metadata section"
+```
+
+Then, I found this in the reference Soroban documentation:
+
+[https://soroban.stellar.org/docs/reference](https://soroban.stellar.org/docs/reference/sdks/build-your-own-sdk#environment-meta-generation)
+
 > Contracts must contain a Wasm custom section with name `contractenvmetav0` and containing a serialized SCEnvMetaEntry
 
 The minimum size for this section alone is **32 bytes**. The only way to reduce the binary size, given these current Soroban specifications, was to find a way to shrink the module code.
