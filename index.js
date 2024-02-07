@@ -1,5 +1,5 @@
 const wabt = require('wabt')();
-const { Keypair, Operation, Contract, SorobanRpc, TransactionBuilder, Address, StrKey } = require("stellar-sdk");
+const { Keypair, Operation, Contract, SorobanRpc, TransactionBuilder, Address, StrKey } = require("@stellar/stellar-sdk");
 
 // Tiniest soroban contract?
 // Try some new WAT here:

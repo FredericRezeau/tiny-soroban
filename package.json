@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "stellar-sdk": "^11.1.0",
+    "@stellar/stellar-sdk": "^11.2.1",
     "wabt": "^1.0.32"
   }
 }
