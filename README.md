@@ -12,13 +12,12 @@ Binary:
 0061736d010000000105016000017e030201000704010000000a0601040042020b
 001e11636f6e7472616374656e766d6574617630000000000000001400000000
 ```
-Upload/Invoke Transactions (testnet):
+Upload/Invoke Transactions (mainnet):
 ```
-Tx 29c32b8694f87e939ef194773582b959698e682503049da75b4691973b02a521
-Tx 8ba6ea17cc37153f3f1f31fc921b067dc8e7d5087a4c32cd30cd0c4cfc8b567f
-Tx 36e5d5fd73eee9c73d1c447d5d6bf8da5f56d76465c4ca3489a109c97b5f5bd5
+Tx 938c6619dd407eaf303eb79687585fc793c47b6c6aa19ba14e5708e9f6041d1d
+Tx f4c1d2abf2a777d44304a6c89df1a69d0ecb805d22618ffd77382f295ca12a55
+Tx 21dd674460387f0e0775a42e73401d508d31751d8a1d8b9c27d72ba6f8e5a907
 ```
-
 # Tiny Soroban challenge
 
 This morning I came across this post from @tyvdh in the [Stellar Developer](https://discord.gg/stellardev) discord server and decided to take on the challenge for the weekend:
